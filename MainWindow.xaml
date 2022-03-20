@@ -1,0 +1,33 @@
+﻿<Window x:Class="RegistrationClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RegistrationClient"
+        mc:Ignorable="d"
+        Title="Registration" Height="800" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="https://images.pexels.com/photos/262325/pexels-photo-262325.jpeg"></ImageBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="3" HorizontalAlignment="Center" Width="300pt" Height="300pt" Background="White" Orientation="Vertical">
+            <Label x:Name="Title_Label" Content="Registration" FontSize="30pt" HorizontalAlignment="Center" Margin="10" FontFamily="Nirmala UI Semilight"></Label>
+            <Label x:Name="Login_Label" Content="Login:" FontSize="15pt" HorizontalAlignment="Left" Margin="25,10" FontFamily="Nirmala UI Semilight"></Label>
+            <TextBox x:Name="Login_TextBox" Foreground="Gray" Background="GhostWhite" HorizontalAlignment="Center" Width="250pt" FontSize="15pt" FontFamily="Nirmala UI Semilight" Margin="10"></TextBox>
+            <Label x:Name="Password_Label"  Content="Password:" FontSize="15pt" HorizontalAlignment="Left" Margin="25,10" FontFamily="Nirmala UI Semilight"></Label>
+            <PasswordBox x:Name="PasswordBox" Foreground="Gray" Background="GhostWhite" HorizontalAlignment="Center" Width="250pt" FontSize="15pt" FontFamily="Nirmala UI Semilight" Margin="10"></PasswordBox>
+            <Button Background="GhostWhite" Content="Confirm" FontSize="20pt" FontFamily="Nirmala UI Semilight" HorizontalAlignment="Center" Width="200pt" Margin="30pt" Click="Button_Click"></Button>
+        </StackPanel>
+    </Grid>
+</Window>
